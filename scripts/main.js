@@ -81,15 +81,15 @@ function getData(url) {
       console.log(mission_id);
       $("div.data").append('<div class="w3-third border">'+
                               '<div class="imgContainer">'+
-                                '<img src='+ val.links.mission_patch_small+' width="150" height="150">'+
+                                '<img src='+ val.links.mission_patch_small+' width="130" height="130">'+
                               '</div>'+
                               '<div class="flightDetails">'+
-                                '<span>'+val.mission_name+'</span><span>#'+val.flight_number+'</span>'+
-                                '<p>Mission Ids:</p>'+
-                                '<p>'+mission_id+'</p>'+
-                                '<p>Launch Year: <span>'+val.launch_year+'</span></p>'+
-                                '<p>Successful Launch: <span>'+val.launch_success+'</span></p>'+
-                                '<p>Successful Landing: <span>'+val.rocket.first_stage.cores[0].land_success+'</span></p>'+
+                                '<span class="title">'+val.mission_name+'</span><span class="title"> #'+val.flight_number+'</span>'+
+                                '<p class="bold">Mission Ids:</p>'+
+                                '<p class="bold">'+mission_id+'</p>'+
+                                '<span class="bold">Launch Year: </span><span>'+val.launch_year+'</span>'+
+                                '<p><span class="bold">Successful Launch: </span><span>'+val.launch_success+'</span></p>'+
+                                '<span class="bold">Successful Landing: </span><span>'+val.rocket.first_stage.cores[0].land_success+'</span>'+
                               '</div>'+
                             '</div>');
     });

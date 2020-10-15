@@ -78,15 +78,14 @@ function getData(url) {
     success: function(result){
     $.each(result, function(i, val) {
       mission_id = val.mission_id[0] == undefined ? 'NA': val.mission_id[0];
-      console.log(mission_id);
-      $("div.data").append('<div class="w3-third border">'+
+      $("div.data").append('<div class="grid-item1 border">'+
                               '<div class="imgContainer">'+
                                 '<img src='+ val.links.mission_patch_small+' width="130" height="130">'+
                               '</div>'+
                               '<div class="flightDetails">'+
                                 '<span class="title">'+val.mission_name+'</span><span class="title"> #'+val.flight_number+'</span>'+
                                 '<p class="bold">Mission Ids:</p>'+
-                                '<p>'+mission_id+'</p>'+
+                                '<p class="margin">'+mission_id+'</p>'+
                                 '<span class="bold">Launch Year: </span><span>'+val.launch_year+'</span>'+
                                 '<p><span class="bold">Successful Launch: </span><span>'+val.launch_success+'</span></p>'+
                                 '<span class="bold">Successful Landing: </span><span>'+val.rocket.first_stage.cores[0].land_success+'</span>'+

@@ -67,6 +67,7 @@ span{
 .imgContainer{
   display: block;
   margin: 15px;
+  background-color: #e5e5e5;
 }
 .flightDetails{
   display: block;
@@ -74,11 +75,9 @@ span{
 }
 img {
   display: block;
-/*   margin-left: auto; */
-/*   margin-right: auto; */
-  background-color: #e5e5e5;
-  width: 230px;
-  height: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 footer {
   text-align: center;

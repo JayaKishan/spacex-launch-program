@@ -77,7 +77,7 @@ function getData(url) {
     url: url,
     success: function(result){
     $.each(result, function(i, val) {
-      mission_id = val.mission_id[0] == undefined ? 'No Ids found': val.mission_id[0];
+      mission_id = val.mission_id[0] == undefined ? 'NA': val.mission_id[0];
       console.log(mission_id);
       $("div.data").append('<div class="w3-third border">'+
                               '<div class="imgContainer">'+

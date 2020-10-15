@@ -86,7 +86,7 @@ function getData(url) {
                                 '<p>'+val.mission_id[0]+'</p>'+
                                 '<p>Launch Year: <span>'+val.launch_year+'</span></p>'+
                                 '<p>Successful Launch: <span>'+val.launch_success+'</span></p>'+
-                                '<p>Successful Landing: <span>'+val.upcoming+'</span></p>'+
+                                '<p>Successful Landing: <span>'+val.rocket.first_stage.cores[0].land_success+'</span></p>'+
                               '</div>'+
                             '</div>');
     });

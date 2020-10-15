@@ -86,7 +86,7 @@ function getData(url) {
                               '<div class="flightDetails">'+
                                 '<span class="title">'+val.mission_name+'</span><span class="title"> #'+val.flight_number+'</span>'+
                                 '<p class="bold">Mission Ids:</p>'+
-                                '<p class="bold">'+mission_id+'</p>'+
+                                '<p>'+mission_id+'</p>'+
                                 '<span class="bold">Launch Year: </span><span>'+val.launch_year+'</span>'+
                                 '<p><span class="bold">Successful Launch: </span><span>'+val.launch_success+'</span></p>'+
                                 '<span class="bold">Successful Landing: </span><span>'+val.rocket.first_stage.cores[0].land_success+'</span>'+

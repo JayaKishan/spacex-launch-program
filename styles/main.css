@@ -43,6 +43,7 @@ body {
 .grid-container1 {
   display: grid;
   grid-template-columns: auto auto auto auto;
+  grid-column-gap: 2%;
 }
 .grid-item1 {
   padding: 5px;
@@ -67,7 +68,6 @@ span{
 .imgContainer{
   display: block;
   margin: 15px;
-  background-color: #e5e5e5;
 }
 .flightDetails{
   display: block;
@@ -77,7 +77,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
+  background-color: #e5e5e5;
 }
 footer {
   text-align: center;

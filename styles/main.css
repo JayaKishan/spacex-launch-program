@@ -43,6 +43,12 @@ body {
 .active {
   background-color: #13da13;
 }
+.title {
+  color: #283d75;
+}
+.bold {
+  font-weight: bold;
+}
 .imgContainer{
   display: block;
   margin-left: 15px;

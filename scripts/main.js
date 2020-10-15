@@ -80,7 +80,7 @@ function getData(url) {
       mission_id = val.mission_id[0] == undefined ? 'NA': val.mission_id[0];
       $("div.data").append('<div class="grid-item1 border">'+
                               '<div class="imgContainer">'+
-                                '<img src='+ val.links.mission_patch_small+' width="130" height="130">'+
+                                '<img src='+ val.links.mission_patch_small+' width="130" height="130"  alt='+val.mission_name+'>'+
                               '</div>'+
                               '<div class="flightDetails">'+
                                 '<span class="title">'+val.mission_name+'</span><span class="title"> #'+val.flight_number+'</span>'+

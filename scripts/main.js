@@ -12,32 +12,28 @@ $( document ).ready(function() {
         $('div.grid-container div.year').removeClass('active');
         $(this).addClass('active');
       }
-      getValues()
+      getValues();
     });
-});
 
-$( document ).ready(function() {
-  $('div.grid-container div.launch').click(function() {
-      if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-      }else {
-        $('div.grid-container div.launch').removeClass('active');
-        $(this).addClass('active');
-      }
-      getValues()
-    });
-});
+    $('div.grid-container div.launch').click(function() {
+        if ($(this).hasClass('active')) {
+          $(this).removeClass('active');
+        }else {
+          $('div.grid-container div.launch').removeClass('active');
+          $(this).addClass('active');
+        }
+        getValues();
+      });
 
-$( document ).ready(function() {
-  $('div.grid-container div.landing').click(function() {
-      if ($(this).hasClass('active')) {
-        $(this).removeClass('active');
-      }else {
-        $('div.grid-container div.landing').removeClass('active');
-        $(this).addClass('active');
-      }
-      getValues()
-    });
+      $('div.grid-container div.landing').click(function() {
+          if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+          }else {
+            $('div.grid-container div.landing').removeClass('active');
+            $(this).addClass('active');
+          }
+          getValues();
+        });
 });
 
 function getValues() {
